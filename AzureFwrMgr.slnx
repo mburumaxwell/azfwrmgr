@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/AzureFwrMgr/AzureFwrMgr.csproj" />
+  <Project Path="tests/AzureFwrMgr.Tests/AzureFwrMgr.Tests.csproj" />
+</Solution>

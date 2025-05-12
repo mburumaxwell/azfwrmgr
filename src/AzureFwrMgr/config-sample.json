@@ -1,0 +1,8 @@
+{
+  "fqdns": [
+    { "name": "MAXHOME", "fqdn": "office.maxwellweru.io" }
+  ],
+  "networks": [
+    { "name": "OTHERHOME", "network": "76.76.21.21/32" }
+  ]
+}
