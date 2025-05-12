@@ -1,7 +1,8 @@
 # typed: false
 # frozen_string_literal: true
 
-class AzureFwrMgr < Formula
+# name must start with caps and match the tool name (AzureFwrMgr, Azurefwrmgr, do not work)
+class Azfwrmgr < Formula
   desc "Azure Firewall Rules Manager."
   homepage "https://github.com/mburumaxwell/azfwrmgr"
   license "MIT"
