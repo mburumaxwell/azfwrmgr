@@ -10,7 +10,6 @@ builder.Configuration.AddInMemoryCollection(new Dictionary<string, string?>
     ["Logging:Debug:LogLevel:Default"] = "None",
 
     ["Logging:LogLevel:AzureFwrMgr"] = builder.Environment.IsDevelopment() ? "Trace" : "Information",
-    ["Logging:LogLevel:System.Net.Http.HttpClient"] = "None", // removes all, add what we need later
 
     ["Logging:Console:FormatterName"] = "cli",
     ["Logging:Console:FormatterOptions:SingleLine"] = "True",
