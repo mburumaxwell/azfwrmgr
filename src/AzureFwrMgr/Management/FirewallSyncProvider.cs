@@ -24,7 +24,7 @@ public abstract class AbstractFirewallSyncProvider : IFirewallSyncProvider
         => name == "AllowAllWindowsAzureIps" || name.StartsWith("AllowAllAzureServicesAndResourcesWithinAzureIps");
 }
 
-public sealed record FirewallSyncContext(SubscriptionResource Subscription, List<KnownFirewallRuleIp> Known, bool dryRun, ILogger Logger)
+public sealed record FirewallSyncContext(SubscriptionResource Subscription, List<KnownFirewallRuleIp> Known, bool DryRun, ILogger Logger)
 {
     public bool TryGetKnownRule(string? name, [NotNullWhen(true)] out IPNetwork2? address)
     {
