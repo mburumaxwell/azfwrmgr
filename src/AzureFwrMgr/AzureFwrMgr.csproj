@@ -60,8 +60,8 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.8" />
     <PackageReference Include="System.CommandLine" Version="2.0.0-beta5.25257.101" />
     <PackageReference Include="System.Memory.Data" Version="9.0.8" /> <!-- Transient, later version supports AoT -->
-    <PackageReference Include="Tingle.Extensions.Logging" Version="5.2.0" />
-    <PackageReference Include="Tingle.Extensions.Primitives" Version="5.2.0" />
+    <PackageReference Include="Tingle.Extensions.Logging" Version="5.3.0" />
+    <PackageReference Include="Tingle.Extensions.Primitives" Version="5.3.0" />
   </ItemGroup>
 
   <ItemGroup>
