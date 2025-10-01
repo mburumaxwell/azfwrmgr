@@ -43,7 +43,7 @@ azfwrmgr --config ./config.json --dry-run
     { "name": "MAXHOME", "fqdn": "office.maxwellweru.io" }
   ],
   "networks": [
-    { "name": "OTHERHOME", "network": "76.76.21.21/32" }
+    { "name": "OTHERHOME", "network": "216.198.79.1/32" }
   ],
   "subscription": [ "<subscription-id-or-name>" ],      // empty or null means all subscriptions
   "separator": "_",                                     // default: "-"

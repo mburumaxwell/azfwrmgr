@@ -25,7 +25,7 @@ public class FirewallManagerConfigTests
                 new JsonObject
                 {
                     ["name"] = "OTHERHOME",
-                    ["network"] = "76.76.21.21/32",
+                    ["network"] = "216.198.79.1/32",
                 },
             },
             ["subscriptions"] = new JsonArray { "personal" },
@@ -44,7 +44,7 @@ public class FirewallManagerConfigTests
         Assert.NotNull(config.KnownNetworks);
         var knownNetwork = Assert.Single(config.KnownNetworks);
         Assert.Equal("OTHERHOME", knownNetwork.Name);
-        Assert.Equal(IPNetwork2.Parse("76.76.21.21/32"), knownNetwork.Network);
+        Assert.Equal(IPNetwork2.Parse("216.198.79.1/32"), knownNetwork.Network);
         Assert.NotNull(config.Subscriptions);
         Assert.Equal("personal", Assert.Single(config.Subscriptions));
         Assert.Equal("_", config.Separator);
@@ -72,7 +72,7 @@ public class FirewallManagerConfigTests
                 new JsonObject
                 {
                     ["name"] = "OTHERHOME",
-                    ["network"] = "76.76.21.21/32",
+                    ["network"] = "216.198.79.1/32",
                 },
             },
         };
@@ -86,7 +86,7 @@ public class FirewallManagerConfigTests
         Assert.NotNull(config.KnownNetworks);
         var knownNetwork = Assert.Single(config.KnownNetworks);
         Assert.Equal("OTHERHOME", knownNetwork.Name);
-        Assert.Equal(IPNetwork2.Parse("76.76.21.21/32"), knownNetwork.Network);
+        Assert.Equal(IPNetwork2.Parse("216.198.79.1/32"), knownNetwork.Network);
         Assert.Null(config.Subscriptions);
         Assert.Equal("-", config.Separator);
         Assert.True(config.CosmosForPostgreSql);

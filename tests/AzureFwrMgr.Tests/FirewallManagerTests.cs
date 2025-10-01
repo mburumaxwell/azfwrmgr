@@ -39,7 +39,7 @@ public class FirewallManagerTests(ITestOutputHelper outputHelper)
         var manager = GetFirewallManager();
         var networks = await manager.GetNetworksAsync("maxwellweru.com", TestContext.Current.CancellationToken);
         Assert.NotNull(networks);
-        Assert.Equal([IPNetwork2.Parse("76.76.21.21/32")], networks);
+        Assert.Equal([IPNetwork2.Parse("216.198.79.1/32")], networks);
 
         networks = await manager.GetNetworksAsync("api64.ipify.org", TestContext.Current.CancellationToken);
         Assert.NotNull(networks);
@@ -70,7 +70,7 @@ public class FirewallManagerTests(ITestOutputHelper outputHelper)
         rules = await manager.GetKnownRulesAsync(config, TestContext.Current.CancellationToken);
         rule = Assert.Single(rules);
         Assert.Equal("MAX_HOME", rule.Name);
-        Assert.Equal(IPNetwork2.Parse("76.76.21.21/32"), rule.Network);
+        Assert.Equal(IPNetwork2.Parse("216.198.79.1/32"), rule.Network);
 
         // // two fqdns, two networks
         var knownNetwork2 = new KnownFirewallRuleIp("WAIYAKI_WAY", IPNetwork2.Parse("196.201.214.255/32"));
@@ -83,7 +83,7 @@ public class FirewallManagerTests(ITestOutputHelper outputHelper)
         Assert.Equal("WAIYAKI_WAY", rules[1].Name);
         Assert.Equal(IPNetwork2.Parse("196.201.214.255/32"), rules[1].Network);
         Assert.Equal("MAX_HOME", rules[2].Name);
-        Assert.Equal(IPNetwork2.Parse("76.76.21.21/32"), rules[2].Network);
+        Assert.Equal(IPNetwork2.Parse("216.198.79.1/32"), rules[2].Network);
         Assert.Equal("YOUR_HOME_0", rules[3].Name);
         Assert.Equal(IPNetwork2.Parse("104.237.62.213/32"), rules[3].Network);
         Assert.Equal("YOUR_HOME_1", rules[4].Name);
