@@ -131,7 +131,7 @@ docker run --rm -it \
 Apply the sample manifest:
 
 ```bash
-kubectl apply -f k8s.yaml
+kubectl apply -f k8s/cron.yml
 kubectl logs -l app=azfwrmgr -f
 ```
 

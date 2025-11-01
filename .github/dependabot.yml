@@ -32,6 +32,7 @@ updates:
 
   - package-ecosystem: 'docker'
     directories: ['**/*']
+    exclude-paths: ['k8s/**']
     schedule:
       interval: 'monthly'
       time: '02:00'
