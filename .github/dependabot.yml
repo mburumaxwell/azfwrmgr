@@ -19,12 +19,19 @@ updates:
     groups:
       docker:
         patterns: ['docker/*']
+      github-actions-artifacts:
+        patterns:
+          - 'actions/upload-artifact'
+          - 'actions/download-artifact'
 
   - package-ecosystem: 'dotnet-sdk'
     directory: '/'
     schedule:
       interval: 'monthly'
       time: '02:00'
+      # Ignore patch updates
+      - dependency-name: '*'
+        update-types: ['version-update:semver-patch']
 
   - package-ecosystem: 'docker'
     directories: ['**/*']
