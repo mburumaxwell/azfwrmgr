@@ -45,12 +45,10 @@ root.SetAction((parseResult, cancellationToken) =>
     return manager.ExecuteAsync(configFile, interactive, dryRun, cancellationToken);
 });
 
-var configuration = new CommandLineConfiguration(root);
-
 // execute the command
 try
 {
-    return await configuration.InvokeAsync(args);
+    return await root.Parse(args).InvokeAsync();
 }
 finally
 {
