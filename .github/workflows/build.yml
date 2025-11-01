@@ -94,7 +94,7 @@ jobs:
           -p:PackageVersion=${{ steps.gitversion.outputs.fullSemVer }}
 
       - name: Upload Artifact (tool)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           path: ${{ github.workspace }}/tool/*
           name: tool
@@ -181,7 +181,7 @@ jobs:
         working-directory: ${{ github.workspace }}/binaries/${{ env.DOTNET_RID }}
 
       - name: Upload Artifact (binaries)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           path: ${{ github.workspace }}/binaries/**
           name: binaries-${{ env.DOTNET_RID }}
@@ -248,7 +248,7 @@ jobs:
           echo "Done"
 
       - name: Upload Artifact (releases)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           path: ${{ github.workspace }}/releases/**
           name: releases-${{ env.DOTNET_RID }}
@@ -351,7 +351,7 @@ jobs:
           push-to-registry: true
 
       - name: Upload Artifact (binaries)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           path: ${{ github.workspace }}/binaries/**
           name: binaries
@@ -454,7 +454,7 @@ jobs:
           VERSION: ${{ env.FULL_SEM_VER }}
 
       - name: Upload Artifact (releases)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           path: ${{ github.workspace }}/releases/**
           name: releases
