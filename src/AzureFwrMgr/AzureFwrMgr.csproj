@@ -56,7 +56,7 @@
     <PackageReference Include="Azure.ResourceManager.MongoCluster" Version="1.0.0" />
     <PackageReference Include="Azure.ResourceManager.PostgreSql" Version="1.4.2" />
     <PackageReference Include="Azure.ResourceManager.Sql" Version="1.4.0" />
-    <PackageReference Include="IPNetwork2" Version="4.0.2" />
+    <PackageReference Include="IPNetwork2" Version="4.2.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.7" />
     <PackageReference Include="System.CommandLine" Version="2.0.3" />
     <PackageReference Include="System.Memory.Data" Version="10.0.5" /> <!-- Transient, later version supports AoT -->
