@@ -51,9 +51,9 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.21.0" />
-    <PackageReference Include="Azure.ResourceManager.CosmosDB" Version="1.4.0" />
+    <PackageReference Include="Azure.ResourceManager.CosmosDB" Version="1.5.0" />
     <PackageReference Include="Azure.ResourceManager.CosmosDBForPostgreSql" Version="1.0.0" />
-    <PackageReference Include="Azure.ResourceManager.MongoCluster" Version="1.0.0" />
+    <PackageReference Include="Azure.ResourceManager.MongoCluster" Version="1.1.0" />
     <PackageReference Include="Azure.ResourceManager.PostgreSql" Version="1.4.2" />
     <PackageReference Include="Azure.ResourceManager.Sql" Version="1.4.0" />
     <PackageReference Include="IPNetwork2" Version="4.2.0" />
